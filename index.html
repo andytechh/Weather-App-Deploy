@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <meta name="description" content="Modern Weather Dashboard with Forecast" />
+    <link rel="stylesheet" href="/weather.css">
+    <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-3b124ff0e0d7a67cd8c995d0aeb1d15a.css?vsn=d">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+  </head>
+  <body class="dark">
+    <div class="background"></div>
+    <div class="card">
+      <div class="header">
+        <h1>Weather Dashboard</h1>
+        <!-- <button class="theme-toggle">🌓</button> -->
+      </div>
+      <div class="search">
+        <div class="search-container">
+          <input type="text" placeholder="Search City..." spellcheck="false">
+          <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+          </span>
+        </div>
+        <button class="button location-btn">
+          <i class="fa-solid fa-location-arrow"></i>
+        </button>
+      </div>
+      <div class="error">City not found. Please try again.</div>
+      <div class="weather">
+        <div class="main-weather">
+          <div class="current-temp">
+            <h2 class="city">Putiao, PH</h2>
+            <div class="current-time">
+              <div class="date"><span id="current-date"></span></div>
+              <div class="time">Time: <span id="current-time"></span></div>
+            </div>
+            <div class="temp-toggle">
+              <span class="temp-value" id="temp-value">75°F</span>
+              <img src="https://openweathermap.org/img/wn/04n@2x.png" class="weather-icon">
+            </div>
+            <div class="condition">
+            
+              <span class="condition-text">Clear Sky</span>
+            </div>
+          </div>
+
+          <div class="weather-extra">
+            <div class="weather-details">
+              <div class="detail-card">
+                <h3>Visibility</h3>
+                <div class="value visibility">10km</div>
+              </div>
+              <div class="detail-card">
+                <h3>Humidity</h3>
+                <div class="value humidity">0%</div>
+              </div>
+              <div class="detail-card">
+                <h3>Wind Speed</h3>
+                <div class="value wind">0 km/h</div>
+              </div>
+              <div class="detail-card">
+                <h3>Cloudiness</h3>
+                <div class="value cloudiness">0%</div>
+              </div>
+            </div>
+        
+            <div class="sun-times">
+              <div class="detail-card sun-card">
+                <div class="sunrise">
+                  <h3>Sunrise</h3>
+                  <i class="fa-solid fa-sun fa-2x"></i>
+                  <div class="sunrise-time">--:--</div>
+                </div>
+                <div class="sunset">
+                  <h3>Sunset</h3>
+                  <i class="fa-solid fa-moon fa-2x"></i>
+                  <div class="sunset-time">--:--</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="forecast">
+          <h2>5-Day Forecast</h2>
+          <div class="forecast-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
